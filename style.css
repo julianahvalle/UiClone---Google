@@ -10,6 +10,15 @@ input,
 button {
   font-family: Arial, sans-serif;
 }
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
 
 /*. chama class # chama id */
 .menu {
@@ -78,6 +87,7 @@ button {
 
 .content {
   display: flex;
+  flex: 1;
   flex-direction: column; /*coloca em formato de coluna */
   padding: 56px 8px 0;
   align-items: center;
@@ -110,3 +120,37 @@ button {
   text-decoration: none;
   color: #1967d2;
 }
+
+.footer {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  background: #f2f2f2;
+}
+
+.footerSection:not(:first-child) {
+  /*adiciona uma linha entre o primerio filho e os demais, neste método, ele esta falando "na footer section, adicionar para todos MENOS o primeiro filho, uma lina" */
+  border-top: 1px solid #e4e4e4;
+}
+
+.footerLocation {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.54); /*último 0 é o alfa, referente a transparência*/
+  padding: 10px 12px;
+}
+
+.footerLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.54); /*último 0 é o alfa, referente a transparência*/
+  padding: 10px;
+}
+
+.footerLinks a:not(:first-child) {
+  margin-left: 27px;
+}
+
+/*media query*/
