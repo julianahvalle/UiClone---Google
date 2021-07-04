@@ -154,3 +154,12 @@ body {
 }
 
 /*media query*/
+
+@media (min-widith: 763px) {
+  .content {
+    padding-top: 120px;
+  }
+  .contentLogo {
+    height: 150px;
+  }
+}
