@@ -1,0 +1,77 @@
+/*resetando default do html */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+input,
+button {
+  font-family: Arial, sans-serif;
+}
+
+/*. chama class # chama id */
+.menu {
+  height: 48px;
+  display: flex; /*chama as propriedades de flex*/
+  width: 100%;
+  justify-content: space-between; /*coloca o máximo de espaço entre os dois */
+  align-items: center;
+}
+
+.menuSectionLeft {
+  display: flex;
+  align-items: center; /*centralisa os elementos */
+}
+.menuSectionLeft .menuIcon {
+  padding: 12px 16px;
+}
+
+.menuLink {
+  text-transform: uppercase; /*tudo uppercase*/
+  font-size: 12px;
+  font-weight: 600; /*600 já é bold */
+  color: #757575;
+  padding: 12px 8px;
+}
+
+.menuLink.active {
+  color: #4285f4;
+  border-bottom: 2px solid #4285f4;
+}
+
+/*selecionando os elementos que não possuem active*/
+.menuLink:not(.active) {
+  margin-bottom: 2px;
+}
+
+.menuSectionRight {
+  display: flex;
+  align-items: center; /*centralisa os elementos */
+
+  margin-right: 4px;
+}
+
+.menuSectionRight .menuIcon {
+  padding: 12px;
+}
+
+.menuProfile {
+  padding: 4px;
+  width: 40px;
+  height: 40px;
+  position: relative; /*colocando a posição certa */
+}
+
+.menuAvatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.menuAvatarFrame {
+  position: absolute; /*salta de onde está e vai apra cima */
+  top: 0;
+  left: 0;
+}
